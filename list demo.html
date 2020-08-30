@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>List Demo</title>
+<style>
+body {
+  margin: 0;
+
+  background-image: url("https://images3.alphacoders.com/890/thumb-1920-89045.jpg");
+  background-size: cover;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+
+  color: white;
+  font-size: 30px;
+  transition: 0.2s;
+
+  
+  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+
+ul li:hover {
+  background: grey;
+
+}
+
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+
+}
+
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+
+.header {
+
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 4px;
+  width: 30%;
+  padding: 10px;
+  display: center;
+  font-size: 16px;
+
+}
+
+
+.addBtn {
+  padding: 10px;
+  width: 15%;
+  
+ background-color:white;
+ color: black;
+  display: center;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+  border-radius: 10px;
+}
+.addBtn:hover {
+  background-color:grey;
+}
+
+</style>
+</head>
+<body>
+
+<div id="myDIV" class="header">
+  <h2 style="margin:5px; font-size: 29px;"><i> List Of Car Or More You Add</h2></i>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+  <li><i>Aston Martin</li>
+  <li>Ferrari</li>
+  <li>Datsun</li>
+  <li>Chevrolet</li>
+  <li>BMW</li>
+  <li>Audi</li></i>
+</ul>
+
+<script type="text/javascript" src="k.js"></script>
+
+</body>
+</html>
